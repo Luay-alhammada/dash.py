@@ -69,14 +69,14 @@ df["lon"] = pd.to_numeric(df["lon"], errors="coerce")
 # -------------------------------
 # Page Title
 # -------------------------------
-st.markdown("<h4>الأطفال في سجلات فرع تحقيق المخابرات الجوية</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; direction: rtl;'>الأطفال في سجلات فرع تحقيق المخابرات الجوية</h4>", unsafe_allow_html=True)
 st.markdown("<br>", unsafe_allow_html=True)
 
 st.markdown("""
-<div>
-<h4>• <b>الموضوع:</b> الانتهاكات بحق الأطفال (دون سن الـ 18)</h4>
-<h4>• <b>الفترة الزمنية:</b> 2011 حتى 2016</h4>
-<h4>• <b>العدد الإجمالي:</b> 1600 سجل</h4>
+<div style='text-align: right; direction: rtl;'>
+<h4 style='text-align: right;'>• <b>الموضوع:</b> الانتهاكات بحق الأطفال (دون سن الـ 18)</h4>
+<h4 style='text-align: right;'>• <b>الفترة الزمنية:</b> 2011 حتى 2016</h4>
+<h4 style='text-align: right;'>• <b>العدد الإجمالي:</b> 1600 سجل</h4>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("<br>", unsafe_allow_html=True)
