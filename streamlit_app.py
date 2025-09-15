@@ -349,39 +349,20 @@ with col23:
 """, unsafe_allow_html=True)
 
 # ==============================================================================
+share_url = "https://dashpy-kzz3gq4nig3bwsxbj4k2yh.streamlit.app/"  # 👈 ضع رابط تطبيقك بعد النشر
+
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("""
-<hr>
-<div style="text-align: center; margin-top: 40px;">
-    <h3>شارك هذا التقرير</h3>
-    <p>ساعد في نشر الوعي ومشاركة هذه المعلومات الهامة على شبكات التواصل الاجتماعي.</p>
-    <div class="share-container">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank" class="share-button share-facebook">
-            <svg class="share-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.353c-.563 0-.647.288-.647.766v.957h2l-.209 1.932h-1.791v4.305h-2.01v-4.305h-1.896v-1.932h1.896v-.884c0-1.388.563-2.18 2.37-2.18h1.839v2.029z"/></svg>
-            فيسبوك
-        </a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://example.com&title=تقرير%20Unforgeten%20trace%20حول%20سجلات%20المخابرات%20الجوية&summary=تحليل%20للانتهاكات%20التي%20طالت%20الأطفال%20في%20سوريا&source=unforgeten_trace" target="_blank" class="share-button share-linkedin">
-            <svg class="share-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.058-.002-2.417-1.474-2.417-1.476 0-1.701 1.151-1.701 2.349v2.929h-1.998v-6h1.915v.875h.027c.268-.48.922-1.043 2.015-1.043 2.15 0 2.544 1.417 2.544 3.253v3.136z"/></svg>
-            لينكدإن
-        </a>
-    </div>
-    <br>
+<div style="text-align:center;">
+    <p style="font-size:16px; font-weight:bold;">📢 شارك التقرير:</p>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={0}" target="_blank">
+        <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" width="40" style="margin:10px;">
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={0}&title=Unforgeten%20Trace%20Report&summary=Children%20in%20Airforce%20Intelligence%20Records" target="_blank">
+        <img src="https://www.svgrepo.com/show/448234/linkedin.svg" width="40" style="margin:10px;">
+    </a>
 </div>
-<script>
-    // Get the current page URL to use in the share links
-    const currentUrl = encodeURIComponent(window.location.href);
-    
-    // Update Facebook share link
-    const facebookBtn = document.querySelector('.share-facebook');
-    facebookBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-    
-    // Update LinkedIn share link
-    const linkedinBtn = document.querySelector('.share-linkedin');
-    const title = encodeURIComponent('تقرير Unforgeten trace حول سجلات المخابرات الجوية');
-    const summary = encodeURIComponent('تحليل للانتهاكات التي طالت الأطفال في سوريا');
-    const source = encodeURIComponent('unforgeten_trace');
-    linkedinBtn.href = `https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${title}&summary=${summary}&source=${source}`;
-</script>
-""", unsafe_allow_html=True)
+""".format(share_url), unsafe_allow_html=True)
 
 
 # -------------------------------
