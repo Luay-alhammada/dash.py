@@ -55,7 +55,7 @@ ul {
 # -------------------------------
 # Load Data
 # -------------------------------
-url = "https://raw.githubusercontent.com/Luay-alhammada/Unforgeten_trace/refs/heads/main/under_18_9.csv"
+url = "https://raw.githubusercontent.com/Luay-alhammada/dashtest/refs/heads/main/under_18_9.csv"
 
 @st.cache_data
 def load_data(url):
